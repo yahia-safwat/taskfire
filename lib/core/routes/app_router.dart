@@ -13,6 +13,16 @@ class AppRouter {
         name: AppRoutes.home,
         builder: (context, state) => const HomePage(),
       ),
+      // GoRoute(
+      //   path: AppRoutes.editTask,
+      //   name: AppRoutes.editTask,
+      //   builder: (context, state) => const EditTaskPage(),
+      // ),
+      // GoRoute(
+      //   path: AppRoutes.addTask,
+      //   name: AppRoutes.addTask,
+      //   builder: (context, state) => const AddTaskPage(),
+      // ),
     ],
     errorBuilder: (context, state) => Scaffold(
       body: Center(
