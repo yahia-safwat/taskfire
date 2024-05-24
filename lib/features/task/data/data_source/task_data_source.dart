@@ -20,7 +20,7 @@ class TaskDataSourceAsDatabase extends TaskDataSource {
   Future<Database> _getDatabase() async {
     final dbPath = await sql.getDatabasesPath();
     final db = await sql.openDatabase(
-      path.join(dbPath, 'taskly.db'),
+      path.join(dbPath, 'taskFire.db'),
       onCreate: (db, version) {
         return db.execute(createTableQuery);
       },
